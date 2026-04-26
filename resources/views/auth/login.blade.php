@@ -7,7 +7,7 @@
     <p class="auth-subheading">Sign in to your salon account</p>
 
     @if ($errors->any())
-        <div style="background:var(--danger-bg);color:var(--danger);border:1px solid #d8b2b2;padding:10px 14px;border-radius:7px;font-size:0.82rem;margin-bottom:20px;">
+        <div style="background:rgba(201,106,106,0.12);color:#c96a6a;border:1px solid rgba(201,106,106,0.3);padding:12px 16px;border-radius:8px;font-size:0.85rem;margin-bottom:20px;">
             {{ $errors->first() }}
         </div>
     @endif
@@ -25,7 +25,7 @@
                 value="{{ old('email') }}"
                 required
                 autofocus
-                placeholder="admin@naillux.com"
+                placeholder="admin@gmail.com"
             >
             @error('email')
                 <p class="form-error">{{ $message }}</p>
